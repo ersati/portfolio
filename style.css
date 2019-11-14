@@ -264,12 +264,13 @@ header {
 /* Section - Contact*/
 section.section__contact {
     margin-top: 880px;
-    height: 50vh;
-    background-color: #555;
+
+
 }
 
 div.contact__header {
     height: 300px;
     margin: 80px 0;
-    background: url(img/contact.jpg) no-repeat center top;
+    background: url(img/contact.jpg) no-repeat 0 50px;
+
 }
