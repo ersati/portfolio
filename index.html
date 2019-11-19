@@ -1,132 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Portfolio - Piotr Pacewicz</title>
-    <link href="css/all.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav class="navbar">
-        <h1 class="logo">Piotr Pacewicz</h1>
-        <ul class="nav-links">
-          <li class="nav-item"><a href="#">home</a></li>
-          <li class="nav-item"><a href="#">about</a></li>
-          <li class="nav-item"><a href="#">portfolio</a></li>
-          <li class="nav-item"><a href="#">contact</a></li>
-        </ul>
-      </nav>
-      <div class="bar"></div>
-      <section class="section__header">
-        <h2 class="h2__header">Hello</h2>
-        <p class="p__header">
-          I'm a Front End Developer <br />
-          based in Barnsley, England
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Portfolio - Piotr Pacewicz</title>
+  <link href="css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Piotr Pacewicz</h1>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="#">home</a></li>
+        <li class="nav-item"><a href="#">about</a></li>
+        <li class="nav-item"><a href="#">portfolio</a></li>
+        <li class="nav-item"><a href="#">contact</a></li>
+      </ul>
+    </nav>
+    <div class="bar"></div>
+    <section class="section__header">
+      <h2 class="h2__header">Hello</h2>
+      <p class="p__header">
+        I'm a Front End Developer <br />
+        based in Barnsley, England
+      </p>
+    </section>
+    <section class="icons">
+      <a href=""><i class="fab fa-linkedin"></i></a>
+      <a href=""><i class="fab fa-facebook-square"></i></a>
+      <a href=""><i class="fab fa-github-square"></i></a>
+      <a href=""><i class="fas fa-envelope-square"></i></a>
+    </section>
+  </header>
+
+  <main>
+    <section class="section__aboutme">
+      <article class="aboutme">
+        <h3>About me</h3>
+        <p>
+          Scarcely on striking packages by so property in delicate. Up or well
+          must less rent read walk so be. Easy sold at do hour sing spot. Any
+          meant has cease too the decay. Since party burst am it match. By or
+          blushes between besides offices noisier as. Sending do brought
+          winding compass in. Paid day till shed only fact age its end.
         </p>
-      </section>
-      <section class="icons">
-        <a href=""><i class="fab fa-linkedin"></i></a>
-        <a href=""><i class="fab fa-facebook-square"></i></a>
-        <a href=""><i class="fab fa-github-square"></i></a>
-        <a href=""><i class="fas fa-envelope-square"></i></a>
-      </section>
-    </header>
+      </article>
+      <img class="profile__photo" src="img/myphoto.png" alt="my portrait" />
+    </section>
 
-    <main>
-      <section class="section__aboutme">
-        <article class="aboutme">
-          <h3>About me</h3>
-          <p>
-            Scarcely on striking packages by so property in delicate. Up or well
-            must less rent read walk so be. Easy sold at do hour sing spot. Any
-            meant has cease too the decay. Since party burst am it match. By or
-            blushes between besides offices noisier as. Sending do brought
-            winding compass in. Paid day till shed only fact age its end.
-          </p>
+    <section class="section__skills">
+      <div class="skills__left">
+        <span class="skill__item"><i class="fab fa-html5"></i></span>
+        <span class="skill__item"><i class="fab fa-css3-alt"></i></span>
+        <span class="skill__item"><i class="fab fa-react"></i></span>
+      </div>
+      <div class="skills__header">
+        <h2 class="skills__h2">Skills</h2>
+      </div>
+      <div class="skills__right">
+        <span class="skill__item"><i class="fab fa-sass"></i></span>
+        <span class="skill__item"><i class="fab fa-js-square"></i></span>
+        <span class="skill__item"><i class="fab fa-bootstrap"></i></span>
+      </div>
+    </section>
+
+    <section class="section__portfolio">
+      <div class="portfolio__header">
+        <h2 class="h2__portfolio">Portfolio</h2>
+
+        <article class="first__project">
+          <h3 class="h3__portfolio">Full Responsive Web Site</h3>
+          <button class="button__portfolio">OPEN</button>
+          <img src="img/first-project.png" alt="first project" class="img__portfolio" />
         </article>
-        <img class="profile__photo" src="img/myphoto.png" alt="my portrait" />
-      </section>
+        <div class="bar"></div>
+        <article class="second__project">
+          <h3 class="h3__portfolio">Web Site Temple in React</h3>
+          <button class="button__portfolio">OPEN</button>
+          <img src="img/second-project.png" alt="second project" class="img__portfolio" />
+        </article>
+      </div>
+    </section>
 
-      <section class="section__skills">
-        <div class="skills__left">
-          <span class="skill__item"><i class="fab fa-html5"></i></span>
-          <span class="skill__item"><i class="fab fa-css3-alt"></i></span>
-          <span class="skill__item"><i class="fab fa-react"></i></span>
+    <section class="section__contact">
+      <div class="contact__header">
+        <h2 class="h2__contact">Contact</h2>
+      </div>
+      <div class="contact">
+        <div class="contact__icons">
+          <a href=""><i class="fab fa-linkedin"></i>
+            <h3 class="h3__contact">LinkedIn</h3>
+          </a>
+
+          <a href=""><i class="fab fa-facebook-square"></i>
+            <h3 class="h3__contact">Facebook</h3>
+          </a>
+
+          <a href=""><i class="fab fa-github-square"></i>
+            <h3 class="h3__contact">Github</h3>
+          </a>
+
+          <a href=""><i class="fas fa-envelope-square"></i>
+            <h3 class="h3__contact">piotrp92@gmail.com</h3>
+          </a>
         </div>
-        <div class="skills__header">
-          <h2 class="skills__h2">Skills</h2>
+        <div class="info">
+          <p class="contact__info">
+            You can find me in Internet at few places also you are welcome to
+            send me an email
+          </p>
         </div>
-        <div class="skills__right">
-          <span class="skill__item"><i class="fab fa-sass"></i></span>
-          <span class="skill__item"><i class="fab fa-js-square"></i></span>
-          <span class="skill__item"><i class="fab fa-bootstrap"></i></span>
-        </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <section class="section__portfolio">
-        <div class="portfolio__header">
-          <h2 class="h2__portfolio">Portfolio</h2>
+  <footer class="main__footer">
+    <h2 class="h2__footer">Piotr Pacewicz</h2>
 
-          <article class="first__project">
-            <h3 class="h3__portfolio">Full Responsive Web Site</h3>
-            <button class="button__portfolio">OPEN</button>
-            <img
-              src="img/first-project.png"
-              alt="first project"
-              class="img__portfolio"
-            />
-          </article>
-          <div class="bar"></div>
-          <article class="second__project">
-            <h3 class="h3__portfolio">Web Site Temple in React</h3>
-            <button class="button__portfolio">OPEN</button>
-            <img
-              src="img/second-project.png"
-              alt="second project"
-              class="img__portfolio"
-            />
-          </article>
-        </div>
-      </section>
+    <section class="footer__icons">
+      <a href=""><i class="fab fa-linkedin"></i></a>
+      <a href=""><i class="fab fa-facebook-square"></i></a>
+      <a href=""><i class="fab fa-github-square"></i></a>
+      <a href=""><i class="fas fa-envelope-square"></i></a>
+    </section>
 
-      <section class="section__contact">
-        <div class="contact__header">
-          <h2 class="h2__contact">Contact</h2>
-        </div>
-        <div class="contact">
-          <div class="contact__icons">
-            <a href=""
-              ><i class="fab fa-linkedin"></i>
-              <h3 class="h3__contact">LinkedIn</h3></a
-            >
+    <div class="last__bar"></div>
 
-            <a href=""
-              ><i class="fab fa-facebook-square"></i>
-              <h3 class="h3__contact">Facebook</h3></a
-            >
+    <div class="footer__bottom">
+      <h4 class="footer__h4">© 2019 Piotr Pacewicz. All Rights Reserved</h4>
+      <h4 class="footer__h4">Designed & Developed by Piotr Pacewicz</h4>
+    </div>
 
-            <a href=""
-              ><i class="fab fa-github-square"></i>
-              <h3 class="h3__contact">Github</h3></a
-            >
+  </footer>
+</body>
 
-            <a href=""
-              ><i class="fas fa-envelope-square"></i>
-              <h3 class="h3__contact">piotrp92@gmail.com</h3></a
-            >
-          </div>
-          <div class="info">
-            <p class="contact__info">
-              You can find me in Internet at few places also you are welcome to
-              send me an email
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-  </body>
 </html>

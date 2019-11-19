@@ -6,7 +6,6 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Verdana, "sans-serif";
-  height: 200vh;
 }
 
 /*  HEADER  */
@@ -48,7 +47,7 @@ nav {
   color: black;
   text-decoration: underline orange;
 }
-
+.last__bar,
 .bar {
   width: 90%;
   margin: 0 auto;
@@ -58,7 +57,7 @@ nav {
 
 header {
   background: green url("img/main.jpg") no-repeat 0px -250px;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -158,7 +157,7 @@ header {
   align-items: center;
   margin-top: 80px;
   background: url(img/skills.jpg) no-repeat center;
-  height: 100vh;
+  min-height: 100vh;
   padding: 40px;
 }
 
@@ -255,7 +254,7 @@ div.contact__header {
   position: relative;
   height: 450px;
   margin: 80px 0;
-  background: url(img/contact.jpg) no-repeat -100px -335px;
+  background: url(img/contact.jpg) no-repeat 0 -335px;
 }
 
 h2.h2__contact {
@@ -273,7 +272,8 @@ h2.h2__contact {
 }
 .contact__icons i {
   font-size: 80px;
-  color: #333;
+  color: #222;
+  transition: color 0.2s;
 }
 
 .contact__icons a {
@@ -281,17 +281,81 @@ h2.h2__contact {
   align-items: center;
   text-decoration: none;
 }
-
+.contact__icons .fab,
+.fas {
+  color: #222;
+  transform: scale(1);
+  transition: transform 0.2s, color 0.2s;
+}
 .h3__contact {
   flex-grow: 1;
   font-size: 40px;
   font-weight: normal;
-  color: #333333;
+  color: #222;
   margin: 0 30px;
   text-align: center;
+  transition: color 0.2s, font-weight 0.2s;
 }
+.contact__icons .fab:hover,
+.fas:hover {
+  color: orange;
+  transform: scale(1.1);
+}
+.h3__contact:hover {
+  color: black;
+  font-weight: 500;
+}
+
 div.info {
   padding: 30px;
   text-align: center;
   font-size: 24px;
+}
+
+/* Footer */
+
+.main__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  background-color: #222;
+}
+.h2__footer {
+  font-size: 70px;
+  text-align: center;
+  color: #a4a4a4;
+}
+
+.footer__icons {
+  margin: 50px 0 80px 0;
+}
+.footer__icons .fab,
+.footer__icons .fas {
+  color: #d1821e;
+  font-size: 50px;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s;
+}
+
+.footer__icons .fab:hover,
+.footer__icons .fas:hover {
+  color: white;
+}
+.last__bar {
+  background-color: #a4a4a4;
+}
+.footer__bottom {
+  min-width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__h4 {
+  margin-top: 20px;
+  color: white;
 }
