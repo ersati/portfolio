@@ -32,6 +32,7 @@ nav {
   display: none;
   min-height: 25px;
 }
+
 .mobile__nav span {
   display: none;
   /* margin-bottom: 6px; */
@@ -40,6 +41,7 @@ nav {
   height: 2px;
   background-color: white;
 }
+
 /* .mobile__nav span:first-child {
   top: 0;
 } */
@@ -66,6 +68,7 @@ nav {
   color: black;
   text-decoration: underline orange;
 }
+
 .last__bar,
 .bar {
   width: 90%;
@@ -84,6 +87,7 @@ header {
   position: absolute;
   top: 245px;
   left: 70px;
+  width: 550px;
   padding: 50px 40px;
   color: white;
   background-color: rgba(0, 0, 0, 0.45);
@@ -284,11 +288,13 @@ h2.h2__contact {
   font-size: 70px;
   font-weight: normal;
 }
+
 .contact {
   display: flex;
 
   padding: 70px;
 }
+
 .contact__icons i {
   font-size: 80px;
   color: #222;
@@ -300,12 +306,14 @@ h2.h2__contact {
   align-items: center;
   text-decoration: none;
 }
+
 .contact__icons .fab,
 .fas {
   color: #222;
   transform: scale(1);
   transition: transform 0.2s, color 0.2s;
 }
+
 .h3__contact {
   flex-grow: 1;
   font-size: 40px;
@@ -315,11 +323,13 @@ h2.h2__contact {
   text-align: center;
   transition: color 0.2s, font-weight 0.2s;
 }
+
 .contact__icons .fab:hover,
 .fas:hover {
   color: orange;
   transform: scale(1.1);
 }
+
 .h3__contact:hover {
   color: black;
   font-weight: 500;
@@ -341,6 +351,7 @@ div.info {
   min-height: 60vh;
   background-color: #222;
 }
+
 .h2__footer {
   font-size: 70px;
   text-align: center;
@@ -350,6 +361,7 @@ div.info {
 .footer__icons {
   margin: 50px 0 80px 0;
 }
+
 .footer__icons .fab,
 .footer__icons .fas {
   color: #d1821e;
@@ -365,9 +377,11 @@ div.info {
 .footer__icons .fas:hover {
   color: white;
 }
+
 .last__bar {
   background-color: #a4a4a4;
 }
+
 .footer__bottom {
   min-width: 80%;
   display: flex;
@@ -385,12 +399,14 @@ div.info {
   /*    HEADER     */
 
   header {
-    background: green url("img/main.jpg") no-repeat -800px -230px;
+    background: green url("img/main.jpg") no-repeat -750px -180px;
+    overflow: hidden;
   }
 
   .nav-links {
     display: none;
   }
+
   .logo {
     font-size: 30px;
     margin: 30px 0 0 45px;
@@ -414,29 +430,33 @@ div.info {
     color: white;
     cursor: pointer;
   }
+
   div.bar {
     display: none;
   }
 
   .section__header {
-    top: 95px;
+    top: 150px;
     left: 0;
     background-color: transparent;
   }
+
   .h2__header {
     font-size: 50px;
   }
+
   .p__header {
     font-size: 25px;
   }
 
   .icons {
-    right: 35px;
-    bottom: 25px;
+    margin: 0 auto;
+    bottom: 60px;
     width: 300px;
     height: 50px;
     justify-content: space-between;
   }
+
   .icons .fab,
   .icons .fas {
     font-size: 40px;
@@ -486,9 +506,11 @@ div.info {
     height: 75px;
     z-index: 1;
   }
+
   .skills__h2 {
     font-size: 40px;
   }
+
   .skill__item {
     font-size: 50px;
   }
@@ -499,6 +521,7 @@ div.info {
     min-height: 80%;
     flex-basis: 100px;
   }
+
   /* portfolio   */
 
   .portfolio__header {
@@ -511,10 +534,116 @@ div.info {
     font-size: 40px;
   }
 
-  /* .first__project {
-    flex-direction: unset;
+  .second__project,
+  .first__project {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
+    flex-flow: row wrap;
   }
-  .second__project {
-    flex-direction: unset;
-  } */
-}
+
+
+
+  .h3__portfolio {
+    font-size: 25px;
+    order: 1;
+    flex-shrink: 1;
+  }
+
+  .img__portfolio {
+    width: 260px;
+    order: 2;
+    flex-shrink: 1;
+  }
+
+  .button__portfolio {
+    width: 222px;
+    height: 74px;
+    font-size: 29px;
+    order: 3;
+    margin-top: 15px;
+    flex-shrink: 1;
+  }
+
+
+
+  /*Contact*/
+
+  section.section__contact {
+    margin-top: 900px;
+  }
+
+  div.contact__header {
+    margin: 0;
+    background: url(img/contact.jpg) no-repeat 0 -50px;
+    background-size: cover;
+    height: 175px;
+  }
+
+  h2.h2__contact {
+    top: 32%;
+    right: 10%;
+    font-size: 40px;
+  }
+
+  .h3__contact {
+    display: none;
+  }
+
+  .contact {
+    flex-direction: row;
+  }
+
+
+  .contact__icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__icons a {
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__icons i {
+    font-size: 110px;
+    padding: 15px;
+  }
+
+  div.info {
+    display: none;
+  }
+
+
+  /* Footer  */
+
+  .h2__footer {
+    font-size: 40px;
+  }
+
+  .footer__icons {
+    margin: 25px 0 40px 0;
+  }
+
+  .footer__icons .fab,
+  .footer__icons .fas {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+  }
+
+  .footer__h4 {
+    margin-top: 5px;
+    font-size: 12px;
+    ;
+
+
+  }
