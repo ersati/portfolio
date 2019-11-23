@@ -269,15 +269,15 @@ header {
 }
 
 /* Section - Contact*/
-section.section__contact {
-  margin-top: 880px;
-}
+
 
 div.contact__header {
   position: relative;
-  height: 450px;
+  height: 300px;
   margin: 80px 0;
-  background: url(img/contact.jpg) no-repeat 0 -335px;
+  background: url(img/contact.jpg) no-repeat 0 -0px;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 h2.h2__contact {
@@ -572,10 +572,6 @@ div.info {
 
   /*Contact*/
 
-  section.section__contact {
-    margin-top: 900px;
-  }
-
   div.contact__header {
     margin: 0;
     background: url(img/contact.jpg) no-repeat 0 -50px;
@@ -646,6 +642,6 @@ div.info {
     margin-top: 5px;
     font-size: 12px;
     ;
-
-
   }
+
+}
