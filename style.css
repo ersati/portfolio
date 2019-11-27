@@ -148,7 +148,7 @@ header {
 .aboutme h3 {
   font-size: 4rem;
   text-align: center;
-  padding: 6.5rem 17rem;
+  padding: 5rem 17rem 4rem;
 }
 
 .aboutme p {
@@ -668,6 +668,9 @@ p.contact__info {
   }
 
   /* portfolio   */
+  .section__portfolio {
+    margin-bottom: 50px;
+  }
 
   .portfolio__header {
     margin: 40px 0;
@@ -692,6 +695,10 @@ p.contact__info {
     font-size: 25px;
     order: 1;
     flex-shrink: 1;
+  }
+
+  .portfolio__contact {
+    text-align: center;
   }
 
   .img__portfolio {
