@@ -5,11 +5,7 @@
   font-size: 10px;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+
 
 body {
   font-family: "Segoe UI", Tahoma, Verdana, "sans-serif";
@@ -509,6 +505,7 @@ p.contact__info {
   }
 
   .navigation {
+    overflow: hidden;
     height: 100vh;
     display: flex;
     flex-direction: column;
