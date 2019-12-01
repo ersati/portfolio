@@ -4,8 +4,43 @@
   box-sizing: border-box;
   font-size: 10px;
 }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
 
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
 
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
 
 body {
   font-family: "Segoe UI", Tahoma, Verdana, "sans-serif";
@@ -13,7 +48,6 @@ body {
 }
 
 /*  HEADER  */
-
 
 .nav__desktop {
   display: flex;
@@ -33,7 +67,6 @@ body {
 .nav__mobile {
   display: none;
 }
-
 
 .nav-links {
   display: flex;
@@ -85,10 +118,17 @@ header {
 .h2__header {
   font-size: 7rem;
   font-weight: normal;
+  animation-name: zoomIn;
+  -webkit-animation-name: zoomIn;
+
+  animation-duration: 2s;
 }
 
 .p__header {
   font-size: 4rem;
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  animation-duration: 2s;
 }
 
 .icons {
@@ -404,7 +444,6 @@ p.contact__info {
 
   /*Navigation */
 
-
   .nav__desktop {
     display: none;
   }
@@ -428,7 +467,8 @@ p.contact__info {
     margin: 30px 0 0 45px;
     font-weight: normal;
     color: white;
-    transition: color .2s .1s ease-in-out, font-size .2s .1s ease-in-out, font-weight .2s .1s ease-in-out;
+    transition: color 0.2s 0.1s ease-in-out, font-size 0.2s 0.1s ease-in-out,
+      font-weight 0.2s 0.1s ease-in-out;
   }
 
   .mobile--active .logo__mobile {
@@ -445,11 +485,10 @@ p.contact__info {
     cursor: pointer;
     background-color: transparent;
     transform: translate(-20px, 18px);
-
   }
 
   .navigation {
-    transition: transform .3 .1 ease-in-out;
+    transition: transform 0.3 0.1 ease-in-out;
   }
 
   .hamburger__box {
@@ -467,7 +506,7 @@ p.contact__info {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    transition: background-color .1s .2s ease-in-out;
+    transition: background-color 0.1s 0.2s ease-in-out;
   }
 
   .hamburger__inner::before,
@@ -477,8 +516,8 @@ p.contact__info {
     background-color: white;
     position: absolute;
     left: 0;
-    content: '';
-    transition: transform .2s .2s ease-in-out;
+    content: "";
+    transition: transform 0.2s 0.2s ease-in-out;
   }
 
   .hamburger__inner::before {
@@ -486,11 +525,10 @@ p.contact__info {
   }
 
   .hamburger__inner::after {
-    top: 10px
+    top: 10px;
   }
 
   .hamburger--active .hamburger__inner {
-
     background-color: transparent;
   }
 
@@ -518,7 +556,7 @@ p.contact__info {
     left: 0;
     z-index: 1;
     transform: translateX(200%);
-    transition: transform .2s .1s ease-in-out;
+    transition: transform 0.2s 0.1s ease-in-out;
   }
 
   .navigation--active {
@@ -559,12 +597,12 @@ p.contact__info {
     font-size: 50px;
     width: 80px;
     height: 80px;
-    transition: transform .2s;
+    transition: transform 0.2s;
   }
 
   .nav__icons .fab:hover,
   .nav__icons .fas:hover {
-    transform: scale(1.2)
+    transform: scale(1.2);
   }
 
   div.bar {
@@ -703,7 +741,7 @@ p.contact__info {
 
   .img__portfolio {
     width: 75%;
-    min-height: 50%;
+    /* min-height: 50%; */
     order: 2;
     flex-shrink: 1;
   }
