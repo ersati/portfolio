@@ -244,7 +244,7 @@ header {
 .skill__item i {
   font-size: 18rem;
   color: white;
-  transition: color .2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 span .fa-html5:hover {
@@ -631,7 +631,7 @@ p.contact__info {
 
   .nav__icons .fab,
   .nav__icons .fas {
-    color: orange;
+    color: #d1821e;
     font-size: 50px;
     width: 80px;
     height: 80px;
