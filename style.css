@@ -80,8 +80,8 @@ body {
 
 .nav-links {
   display: flex;
-  position: fixed;
-  right: 5%;
+  /* position: fixed;
+  right: 5%; */
   list-style: none;
   font-size: 2rem;
   margin-right: 10.5rem;
